@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --line-sz: 5px;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+  text-rendering: optimizeSpeed;
+}
+
+body {
+  font-size: 1.6rem;
+  min-height: 100vh;
+  color: rgba(22, 24, 35, 1);
+  direction: ltr;
+  overscroll-behavior: contain;
+  -webkit-font-smoothing: antialiased;
+}
+
+.text-gradient {
+  display: inline-block;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to right, #2cccff, #6a5af9);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a,
+a:active,
+a:visited {
+  display: inline-block;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+header h1 {
+  text-align: center;
+}
+
+.container {
+  padding: 0 1.5rem;
+}
+
+h2 {
+  padding: 1rem 0;
+}
+
+.exercise-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+}
+
+.exercise-list li {
+  flex: 1 1 25%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.exercise-list a {
+  box-shadow: 0 0 1rem 0 rgba(22, 24, 35, 0.5);
+  border-radius: 0.5em;
+  position: relative;
+  min-height: 23rem;
+  overflow: hidden;
+}
+
+.exercise-list li img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  opacity: 0.7;
+  transition: all 0.5s ease-in-out;
+}
+
+.exercise-list li:hover img {
+  opacity: 1;
+}
+
+.exercise-list a > span:nth-of-type(1) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: inline-block;
+  width: var(--line-sz);
+  height: 0;
+  background-color: #6a5af9;
+  transition: all 0.5s ease-in-out;
+}
+
+.exercise-list a > span:nth-of-type(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 0;
+  height: var(--line-sz);
+  background-color: #6a5af9;
+  transition: all 0.5s ease-in-out;
+}
+
+.exercise-list a > span:nth-of-type(3) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  width: var(--line-sz);
+  height: 0;
+  background-color: #6a5af9;
+  transition: all 0.5s ease-in-out;
+}
+
+.exercise-list a > span:nth-of-type(4) {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: inline-block;
+  width: 0;
+  height: var(--line-sz);
+  background-color: #6a5af9;
+  transition: all 0.5s ease-in-out;
+}
+
+.exercise-list li:hover a > span:nth-of-type(odd) {
+  height: 100%;
+}
+
+.exercise-list li:hover a > span:nth-of-type(even) {
+  width: 100%;
+}
+
+.exercise-list h3 {
+  padding: 1rem;
+  color: #6a5af9;
+}
+
+footer p {
+  font-weight: bold;
+  font-size: 1.8rem;
+  text-align: center;
+}
