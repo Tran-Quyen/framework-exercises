@@ -64,6 +64,27 @@ h2 {
   padding: 1rem 0;
 }
 
+.loading {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.progress {
+  --r1: 154%;
+  --r2: 68.5%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: radial-gradient(var(--r1) var(--r2) at top, #0000 79.5%, #6a5af9 80%),
+    radial-gradient(var(--r1) var(--r2) at bottom, #6a5af9 79.5%, #0000 80%),
+    radial-gradient(var(--r1) var(--r2) at top, #0000 79.5%, #6a5af9 80%), #ccc;
+  background-size: 50.5% 220%;
+  background-position: -100% 0%, 0% 0%, 100% 0%;
+  background-repeat: no-repeat;
+  animation: progress 2s infinite linear;
+}
+
 .exercise-list {
   display: flex;
   flex-wrap: wrap;
@@ -158,27 +179,6 @@ footer p {
   font-weight: bold;
   font-size: 1.8rem;
   text-align: center;
-}
-
-.loading {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.progress {
-  --r1: 154%;
-  --r2: 68.5%;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background: radial-gradient(var(--r1) var(--r2) at top, #0000 79.5%, #6a5af9 80%),
-    radial-gradient(var(--r1) var(--r2) at bottom, #6a5af9 79.5%, #0000 80%),
-    radial-gradient(var(--r1) var(--r2) at top, #0000 79.5%, #6a5af9 80%), #ccc;
-  background-size: 50.5% 220%;
-  background-position: -100% 0%, 0% 0%, 100% 0%;
-  background-repeat: no-repeat;
-  animation: progress 2s infinite linear;
 }
 
 @keyframes progress {
