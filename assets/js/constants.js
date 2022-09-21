@@ -69,6 +69,56 @@ export const dataModuleList = [
         path: '10.dad-jokes',
         thumbnailUrl: '10-dad-jokes.png',
       },
+      {
+        name: 'Event Keycodes',
+        path: '11.event-keycodes',
+        thumbnailUrl: '11-event-keycodes.png',
+      },
+      {
+        name: 'Fag Collapse',
+        path: '12.faq-collapse',
+        thumbnailUrl: '12-faq-collapse.png',
+      },
+      {
+        name: 'Random Choice Picker',
+        path: '13.random-choice-picker',
+        thumbnailUrl: '13-random-choice-picker.png',
+      },
+      {
+        name: 'Animated Navigation',
+        path: '14.animated-navigation',
+        thumbnailUrl: '14-animated-navigation.png',
+      },
+      {
+        name: 'Incrementing Counter',
+        path: '15.incrementing-counter',
+        thumbnailUrl: '15-incrementing-counter.png',
+      },
+      {
+        name: 'Drink Water',
+        path: '16.drink-water',
+        thumbnailUrl: '16-drink-water.png',
+      },
+      {
+        name: 'Movie App',
+        path: '17.movie-app',
+        thumbnailUrl: '17-movie-app.png',
+      },
+      {
+        name: 'Background Slider',
+        path: '18.background-slider',
+        thumbnailUrl: '18-background-slider.png',
+      },
+      {
+        name: 'Theme Clock',
+        path: '19.theme-clock',
+        thumbnailUrl: '19-theme-clock.png',
+      },
+      {
+        name: 'Button Ripple Effect',
+        path: '20.button-ripple-effect',
+        thumbnailUrl: '20-button-ripple-effect.png',
+      },
     ],
   },
 ]
