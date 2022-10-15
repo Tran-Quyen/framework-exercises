@@ -126,7 +126,7 @@ export const dataModuleList = [
       {
         name: 'Drag N Drop',
         path: '21.drag-n-drop',
-        thumbnailUrl: '22-drag-n-drop.png',
+        thumbnailUrl: '21-drag-n-drop.png',
       },
       {
         name: 'Drawing App',
